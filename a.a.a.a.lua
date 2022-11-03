@@ -1,3 +1,4 @@
+--ok
 local RunService = game:GetService("RunService")
 
 RunService.Heartbeat:Connect(function()
@@ -133,6 +134,12 @@ function Aiming.UpdateFOV()
     -- // Return circle
     return circle
 end
+
+spawn(function()
+    while task.wait() do
+        Aiming.UpdateFOV()
+    end
+end)
 
 -- // Custom Functions
 local CalcChance = function(percentage)
