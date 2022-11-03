@@ -1,8 +1,9 @@
+-- Open Source Code
+-- Aiming Module
+
 local RunService = game:GetService("RunService")
 
 RunService.Heartbeat:Connect(function()
-    if not getgenv().RESOLVE then return end
-
     pcall(function()
         for i,v in pairs(game.Players:GetChildren()) do
             if v.Name ~= game.Players.LocalPlayer.Name then
@@ -53,8 +54,8 @@ local tableinsert = table.insert
 getgenv().Aiming = {
     Enabled = true,
 
-    ShowFOV = false,
-    FOV = 60,
+    ShowFOV = true,
+    FOV = 20,
     FOVSides = 300,
     FOVColour = Color3fromRGB(255, 0, 0),
 
