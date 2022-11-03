@@ -1,4 +1,3 @@
---ok
 local RunService = game:GetService("RunService")
 
 RunService.Heartbeat:Connect(function()
