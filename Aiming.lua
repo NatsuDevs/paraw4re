@@ -1,6 +1,3 @@
--- Open Source Code
--- Aiming Module
-
 local RunService = game:GetService("RunService")
 
 RunService.Heartbeat:Connect(function()
@@ -54,7 +51,7 @@ local tableinsert = table.insert
 getgenv().Aiming = {
     Enabled = true,
 
-    ShowFOV = true,
+    ShowFOV = false,
     FOV = 20,
     FOVSides = 300,
     FOVColour = Color3fromRGB(255, 0, 0),
